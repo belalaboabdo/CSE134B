@@ -1,0 +1,43 @@
+body    {
+    background-color: crimson;
+    background-image: url("images/Destiny2.jpg");
+}
+#welcome      {
+    color: white;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+#login      {
+    background-color: rgb(223, 0, 0);
+    color: white;
+    width:8em;
+    height:2em;
+    font-size: 14px;
+    float:right;
+    text-align: center;
+    display: block;
+}
+
+button:hover    {
+    background-color: rgb(255, 0, 0);
+}
+
+#signup      {
+    background-color: rgb(223, 0, 0);
+    color: white;
+    width:16em;
+    height:2em;
+    font-size: 20px;
+    text-align: center;
+    display: block;
+}
+
+#tagline    {
+    color:white;
+    font-size: 200%;
+    text-align: left;
+    display: block;
+}
+

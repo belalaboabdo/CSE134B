@@ -1,0 +1,76 @@
+body    {
+    background-image: url("images/hollowKnight.jpg");
+    background-size: 97%;
+    background-color: rgb(71, 71, 71);
+    text-align: center;
+}
+
+.box
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.8);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+#instructions      {
+    color: white;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#photoTitle     {
+    font-size: 18px;
+    display: inline-block;
+}
+
+#gameFileTitle     {
+    font-size: 18px;
+    display: inline-block;
+}
+
+#gameNameTitle     {
+    font-size: 18px;
+    display: inline-block;
+}
+
+#genresTitle     {
+    font-size: 18px;
+    display: inline-block;
+}
+
+#gameDescriptionTitle     {
+    font-size: 18px;
+    display: inline-block;
+}
+
+#gameDescription textarea   {
+    width: 24em;
+    height: 8em;
+    display: inline-block;
+    align-items: flex-start;
+}
+
+#forms      {
+    display:block;
+    color: white;
+    text-align: center;
+}
+
+#label1     {
+    display: inline-block;
+    width: 30em;
+}
+
+#input1     {
+    display: inline-block;
+    width: 30em;
+}
+
+#submit     {text-align: center}
+#reset     {text-align: center}
