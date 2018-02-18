@@ -5,13 +5,28 @@
     <title>Input Form UI Design</title>
     <link rel="stylesheet" href="login_style.css">
 </head>
+<script language="javascript">
+    var accounts = {};
+    accounts["Arr"] = "abc"
+    accounts["B"] = "sdf234"
+    accounts["C"] = "asd"
+    function loginFunction() {
+        var username = document.forms["LoginInput"]["Username"].value;
+        var password = document.forms["LoginInput"]["Password"].value;
+        if(accounts[username] != password) {
+            alert("The username and password you entered is invalid.");
+        } else {
+            window.open("Chat.html");
+        }
+    }
+</script>
 <body>
     <div class="Ion">
         <h1> ION </h1>
     </div>
     <div class="box">
        <h2>Login</h2>
-        <form>
+        <form name="LoginInput" method="post" onsubmit="loginFunction()">
             <div class="inputBox">
                 <input type="text" name="Username" required="">
                 <label>Username</label>

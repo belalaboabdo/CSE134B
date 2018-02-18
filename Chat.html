@@ -1,54 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="chatApp">
+
 <head>
     <meta charset="UTF-8">
     <title>Developer Messaging</title>
     <link rel="stylesheet" type="text/css" href="chat_style.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('button').click(function(){
+                var message = $('textarea').val();
+                var msg = "<span class='chat-message'>" + message + "</span>";
+
+
+                $('#chat').append('<div class="chat developer">'
+                                        + '<div class="user-photo">'
+                                            + '<img src="img/ProfileB.png" alt="">'
+                                        + '</div>'
+                                        +  msg
+                                    + '</div>');
+            });
+        });
+    </script>
 </head>
+
+
 <body>
-    <div class="Ion">
-        <h1> ION </h1>
-    </div>
     <div class="chatbox">
-        <div class="chatlogs">
+        <div class="chatlogs", id = "chat">
             <div class="chat customer">
                 <div class="user-photo">
                     <img src="img/ProfileA.png" alt="">
                 </div>
                 <p class="chat-message">There is a bug on this patch note, the game seems to lag.</p>
             </div>
-            <div class="chat developer">
-                <div class="user-photo">
-                    <img src="img/ProfileB.png" alt="">
-                </div>
-                <p class="chat-message">I've looked into it. It seems to be because of a memory leak.</p>
-            </div>
-            <div class="chat developer">
-                <div class="user-photo">
-                    <img src="img/ProfileB.png" alt="">
-                </div>
-                <p class="chat-message">Thank you for notifying me about this. There will be a hotfix tonight that should resolve this issue.</p>
-            </div>
-            <div class="chat customer">
-                <div class="user-photo">
-                    <img src="img/ProfileA.png" alt="">
-                </div>
-                <p class="chat-message">No problem! Do I get anything for free?</p>
-            </div>
-            <div class="chat developer">
-                <div class="user-photo">
-                    <img src="img/ProfileB.png" alt="">
-                </div>
-                <p class="chat-message">No you are a scrub.</p>
-            </div>
-            <div class="chat developer">
-                <div class="user-photo">
-                    <img src="img/ProfileB.png" alt="">
-                </div>
-                <p class="chat-message">But thanks for the help.</p>
-            </div>
-
-
         </div>
         <div class="chat-form">
             <textarea></textarea>
@@ -57,34 +43,13 @@
     </div>
 
 
-
-
-
-    <div class="navbar">
-        <div class="item">
-            <div class="fa fa-user"></div>
-            <div class="label">Profile</div>
-        </div>
-        <div class="item">
-            <div class="fa fa-picture-o"></div>
-            <div class="label">Photos</div>
-        </div>
-        <div class="item">
-            <div class="fa fa-bell"></div>
-            <div class="label">Notifications</div>
-        </div>
-        <div class="item">
-            <div class="fa fa-wrench"></div>
-            <div class="label">Settings</div>
-        </div>
-        <div class="item">
-            <div class="fa fa-search"></div>
-            <div class="label">Search</div>
-        </div>
-        <div class="item">
-            <div class="fa fa-power-off"></div>
-            <div class="label">Logout</div>
-        </div>
-    </div>
 </body>
+<ul id="navbar">
+    <li class="LOGO"><a href="#">ION</a></li>
+    <li class="active"><a href="#">Home</a></li>
+    <li><a href="#">Profile</a></li>
+    <li><a href="#">Settings</a></li>
+    <li><a href="Login.html">Logout</a></li>
+</ul>
+
 </html>
