@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>GameFlix</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="homepage.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="/homepage.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+  <nav class="navbar navbar-inverse sticky-top">
+<!-- Button trigger modal -->
+<button type="button" class="btn navbar-btn btn-sm pull-right btn btn-info" data-toggle="modal" data-target="#exampleModalCenter">
+Upload Game
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+      <form>
+      <div class="form-group">
+        <label for="formGroupExampleInput">Game Title</label>
+        <input type="text" class="form-control" id="uploadTitle" placeholder="Example input">
+      </div>
+      <label class="btn btn btn-success">
+        <input id="uploadGame" type="file" hidden>
+    </label>
+    </form>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" data-dismiss="modal" aria-label="Close" id="upload" onclick="upload()" class="btn btn-primary">Upload</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand">GameFlix</a>
+      </div>
+      <ul class="nav navbar-nav mr-auto">
+        <li class="nav-item"><a class="nav-link" href="/featured">Featured</a></li>
+        <li class="nav-item"><a class="nav-link" href="/library">Library</a></li>
+        <li class="nav-item"><a class="nav-link" href="/community">Community</a></li>
+        <li class="nav-item"><a class="nav-link" href="/profile">Profile</a></li>
+        <li class="nav-item"><a class="nav-link" href="/messages">Messages</a></li>
+      </ul>
+    </div>
+
+  </nav>
+</div>
+
+<div class="container-fluid">
+  <div class="jumbotron text-center" id="jumbo">
+    <div class="container-fluid">
+      <h1>Featured This Week</h1>
+      <p>...</p>
+      <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+    </div>
+  </div>
+</div>
+
+<div id="imageGrid" class="row">
+
+    <div class="col-lg-4 col-sm-6 col-xs-12">
+        <a href="#">
+             <img src="zelda_botw.jpg" class="thumbnail img-responsive">
+        </a>
+    </div>
+
+     <div class="col-lg-4 col-sm-6 col-xs-12">
+        <a href="#">
+             <img src="meat.png" class="thumbnail img-responsive">
+        </a>
+    </div>
+
+     <div class="col-lg-4 col-sm-6 col-xs-12">
+        <a href="#">
+             <img src="pubg.jpg" class="thumbnail img-responsive">
+        </a>
+    </div>
+
+
+
+    <div class="col-lg-4 col-sm-6 col-xs-12">
+        <a href="#">
+             <img src="cuphead.jpeg" class="thumbnail img-responsive">
+        </a>
+    </div>
+
+    <div class="col-lg-4 col-sm-6 col-xs-12">
+        <a href="#">
+             <img src="thieves.jpg" class="thumbnail img-responsive">
+        </a>
+    </div>
+
+<!--      <div class="col-md-4 col-sm-6 col-xs-12">
+        <a href="#">
+             <img src="meat.png" class="thumbnail img-responsive">
+        </a>
+    </div> -->
+
+</div>
+  
+
+</body>
+</html>

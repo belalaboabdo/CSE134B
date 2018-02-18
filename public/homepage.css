@@ -1,0 +1,10 @@
+.jumbotron {
+
+  background-size: cover; 
+  background-image:url('zelda_botw.jpg');
+  background-position: center center;	
+}
+
+.jumbotron:hover{
+	opacity: .8;
+}
